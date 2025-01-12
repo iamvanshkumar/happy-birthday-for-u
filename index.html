@@ -27,7 +27,7 @@
     </div>
 
     <!-- Play Button and Text -->
-    <div class="absolute bottom-10 flex flex-col justify-center items-center">
+    <div class="absolute bottom-40 flex flex-col justify-center items-center">
         <div id="playBtn" class="w-16 h-16 bg-white rounded-full flex justify-center items-center cursor-pointer shadow-lg">
             <i id="playIcon" class='bx bx-play text-black text-4xl'></i>
         </div>
@@ -92,7 +92,7 @@
                     opacity: 0,
                     scale: Math.random() * 0.5 + 0.5,
                     rotation: Math.random() * 360,
-                    duration: 10,
+                    duration: 5,
                     ease: "power4.out",
                     onComplete: () => confetti.remove()
                 });
@@ -100,7 +100,7 @@
         }
 
         // Trigger party poppers every 5 seconds
-        setInterval(partyPopperEffect, 500);
+        setInterval(partyPopperEffect, 5000);
 
         // Update countdown every second
         setInterval(updateCountdown, 1000);
